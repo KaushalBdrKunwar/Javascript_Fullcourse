@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+</head>
+<body>
+    <script>
+        /*
+        //objects make our code more organized.
+        //no need to create bunch of variables.
+        // an object groups multiple values together.
+        const product = {
+            name: 'socks',
+            price: 1090
+
+        };
+        console.log(product);
+        console.log(product.name);
+        console.log(product.price);//accessing a property
+
+        product.name = 'cotton socks';
+        console.log(product);
+
+        product.newProperty = true;// adding a property that dont exist.
+        console.log(product);
+
+        delete product.newProperty;//deleting property
+        console.log(product);
+        */
+
+        const product2 = {
+            name: 'shirt',
+            ['delivery-time']: '1 day',
+            rating: {
+                stars: 4.5,
+                count: 87,
+            },
+            fun: function function1(){
+                console.log('I am function');
+            }
+        };
+        console.log(product2);
+        console.log(product2.name);
+        console.log(product2['name']);
+        console.log(product2['delivery-time']);
+
+
+        console.log(product2.rating.count);
+        product2.fun();
+        
+
+        console.log(typeof console);// its object so object+method
+        /*
+        Bulit-in Objects:
+        -json(JavaScript Object Notation)
+            -a syntax
+            -similar to JavaScript object
+        -localStorage
+        */
+
+        console.log(JSON.stringify(product2));
+            //json doesnot support function
+
+        //json to js
+        const jsonString = JSON.stringify(product2);
+        console.log(jsonString);
+
+
+        // property of objects or autoboxing :
+        console.log('hello'.length);
+        console.log('hello'.toUpperCase());
+        // similar to string autoboxing works with numbers but doesnot work with null
+
+        // # objects as Reference
+            const object1 ={
+                message: 'hello'
+            };
+            const object2 = object1;
+
+
+            object1.message = 'Good job!';
+            console.log(object1);
+            console.log(object2);
+            
+            const object3 = {
+                message: 'Good job!'
+            };
+
+            console.log(object3 === object1); // false
+            console.log(object2 === object1);// true
+
+            const object4 = {
+                message: 'Good job!',
+                price: 799
+            };
+            //const message = object4.message;
+            const { message } = object4;
+            console.log(message);
+            console.log(price);
+
+
+            const object5 = {
+                // message: message
+                message,
+                //method: function function1(){
+                method(){
+                    console.log('method');
+                }
+            };
+            console.log(object5);
+            object5.method();
+
+        </script>
+</body>
+</html>
