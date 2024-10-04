@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <button>hello</button>
+    <button class="js-button">Second button</button>
+
+    <script>
+      console.log(document.querySelector('button').innerHTML);
+      document.querySelector('button').innerHTML = 'Changed';
+
+      //console.log(document.querySelector('.js-button'));
+
+      const buttonElement = document.querySelector('.js-button');
+      console.log(buttonElement);
+
+
+       // //Build In Objects
+        // console.log()
+        // Math.random()
+        // JSON.stringify()
+        // localStorage.getItem()
+        //DOM
+        
+        // document object models the webpage
+       /* document.body.innerHTML = 'hello';
+        document.title = 'Good job!';*/
+        
+        // so we can have control over the whole web page
+        //lets take an example of html code inside DOM
+
+       // document.body.innerHTML = '<button> Good job!</button>';
+
+        // method is function inside object
+        //# important method of DOM dpcument.querySelector()
+
+
+
+    </script>
+</body>
+</html>
