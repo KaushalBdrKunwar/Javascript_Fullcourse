@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Functions</title>
+</head>
+<body>
+    <script>
+   /* //1. Calling of Function
+        function greeting(){
+            console.log('hello');
+        }
+        greeting();
+
+    //2. Function can be kept in variables.
+        const num =2;
+        const function1 = function greeting(){
+            console.log('hello2');
+        };
+
+        console.log(function1);
+
+
+    //Function can be kept in object
+
+        const object1 ={
+            num: 2,
+            fun: function greeting(){
+                console.log('hello3');
+            }
+        };
+        object1.fun();
+
+    // pass the value using funtion
+
+    function display(param){
+        console.log(param);
+    }
+    display(2);
+
+    // passing function into another function
+    function run(param){
+        param();
+    }
+
+    run(function(){
+        console.log('hello4');
+    });*/
+
+    selTimeout(function(){
+        console.log('timeout');
+    }, 3000); //after 3 sec timeout.
+
+    console.log('next line');
+    //asynchronos code so it doesnot wait time out and display
+    //next line at first place
+
+    // setInterval(function(){
+    //     console.log('interval');
+    // }, 3000);
+    
+    </script>
+</body>
+</html>
