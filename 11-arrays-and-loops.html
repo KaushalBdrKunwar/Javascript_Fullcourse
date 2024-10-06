@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays and Loops</title>
+</head>
+<body>
+    <script>
+        // const myArray =    [10, 'hello',true,{name: 'socks'},[1,2]];
+        // // array can store numbers,string,objects or array itself.
+        // console.log(myArray);
+        // //list of values
+        
+        // console.log(myArray[0]);
+        // myArray[0] = 99;// change value.
+        // console.log(myArray);
+        // console.log(myArray.length);
+
+        // console.push(100);// 100 values are into array
+
+        // myArray.splice(0, 1);//remove values from array 
+        //                     // 1 is number the value to be removed at index 0
+
+        // let i =1; //while loop
+
+        // while(i<5){
+        //     console.log(i);
+        //     i++;
+        // } // best for non-standard loop
+
+       /* for (let i=1; i<=5; i++){
+            console.log(i);
+        }
+
+        let randomNumber = 0;
+
+        while(randomNumber < 0.5){
+            randomNumber = Math.random();
+        }// non-standard loop
+        console.log(randomNumber);
+        */
+
+        //###Loop in array
+       
+       /* const todoList =[
+            'make dinner',
+            'wash dishes',
+            'watch youtube'
+        ];
+
+        for (let index = 0; index <= todoList.length - 1; index++){
+           const value = todoList[index];
+            console.log(value);
+        }*/
+
+
+        const nums = [1, 1, 3];
+        let total = 0;
+
+        for(let i=0; i < nums.length; i++){
+              const num =  nums[i];
+              total =total + num;
+        }
+        console.log(total);
+
+        const numsDoubled = [];
+
+        for(let i =0; i <nums.length; i++){
+            const num = nums[i];
+            numsDoubled.push(num*2);
+        }
+
+        console.log(numsDoubled);
+    </script>
+</body>
+</html>
